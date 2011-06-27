@@ -15,6 +15,8 @@ Or using source:
 Using simple client
 -------------------
 
+from command line::
+
     $ pekao24
     Client ID:
     ...
@@ -28,6 +30,8 @@ Using simple client
     
 Using the API
 -------------
+
+.. code-block:: python
 
     from pekao24 import Pekao24
     import getpass
