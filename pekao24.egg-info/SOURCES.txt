@@ -1,0 +1,13 @@
+README
+setup.cfg
+setup.py
+pekao24/__init__.py
+pekao24/client.py
+pekao24.egg-info/PKG-INFO
+pekao24.egg-info/SOURCES.txt
+pekao24.egg-info/dependency_links.txt
+pekao24.egg-info/entry_points.txt
+pekao24.egg-info/not-zip-safe
+pekao24.egg-info/requires.txt
+pekao24.egg-info/top_level.txt
+scripts/pekao24
