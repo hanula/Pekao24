@@ -31,8 +31,8 @@ from command line::
 Using the API
 -------------
 
-.. code-block:: python
-
+::
+    
     from pekao24 import Pekao24
     import getpass
     client_id = raw_input('Client ID: ')
