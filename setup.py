@@ -1,5 +1,7 @@
+
+import os
+import sys
 from setuptools import setup, find_packages
-import sys, os
 
 version = '0.0'
 
@@ -7,7 +9,6 @@ requires = [
     "BeautifulSoup",
     "mechanize",
 ]
-
 
 
 setup(name='pekao24',
@@ -28,5 +29,4 @@ setup(name='pekao24',
       install_requires=requires,
       entry_points="""
       # -*- Entry points: -*-
-      """,
-)
+      """)
