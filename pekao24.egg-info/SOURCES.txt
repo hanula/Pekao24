@@ -1,4 +1,4 @@
-README
+README.rst
 setup.cfg
 setup.py
 pekao24/__init__.py
