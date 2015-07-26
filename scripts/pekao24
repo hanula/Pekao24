@@ -10,25 +10,25 @@ if __name__ == "__main__":
     script = sys.argv[0]
     while os.path.islink(script):
         script = os.readlink(script)
-        
+
     script_dir = os.path.join(os.path.dirname(script), '..')
     src_root = os.path.abspath(os.path.normpath(script_dir))
-  
+
     if os.path.exists(src_root):
         sys.path.insert(0, src_root)
-    
+
     from pekao24 import Pekao24
-    
-    client_id = raw_input('Client ID: ')
+
+    client_id = sys.argv[1] if len(sys.argv) > 1 else raw_input('Client ID: ')
     password = getpass.getpass('Password: ')
-    
+
     client = Pekao24(client_id, password)
     accounts = client.get_accounts()
-    
+
     for account in accounts:
         print "Account details: %(id)s %(name)s: %(amount)s %(currency)s" % account
         transactions = client.get_transaction_history(account['id'])
-        
+
         for transaction in transactions:
             print "Transaction #%(id)5s: %(date)s, %(amount)12s %(currency)s: %(title)s" % transaction
         print
